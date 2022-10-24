@@ -215,6 +215,24 @@ footer {
     
 }
 
+/*Планшеты*/
+@media (max-width: 1024px) {    
+    .about {
+      padding: 115px 20px;
+    }
+    .about h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .about__image {
+        width: 280px;
+    }
+    .about__sun-image {
+        height: 75px;
+        width:75px ;
+    }
+  }
+
 /*Mobile*/
 @media (max-width: 720px) {  
     header {
@@ -256,20 +274,3 @@ footer {
     }
   }
 
-/*Планшеты*/
-@media (max-width: 1024px) {    
-    .about {
-      padding: 115px 20px;
-    }
-    .about h1 {
-        font-size: 36px;
-        line-height: 40px;
-    }
-    .about__image {
-        width: 280px;
-    }
-    .about__sun-image {
-        height: 75px;
-        width:75px ;
-    }
-  }
