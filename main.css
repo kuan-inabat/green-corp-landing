@@ -2,8 +2,8 @@ body {
 font-family: "Raleway", sans-serif;
 color: #213053;
 margin: 0;
-
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -83,10 +83,9 @@ button {
 
 .form__container {
     width: 550px;
-  }
+}
 
 .form {
-    
     background-color: #1D263A;
     color: #fff;
     padding-top: 115px; 
@@ -115,14 +114,12 @@ button {
     display: grid;
     grid-gap: 20px;
     margin-top: 60px;
-
 }
 
 .form label {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
-
 }
 
 .form input {
@@ -155,20 +152,18 @@ select {
 
 input {
     outline: none;
-  }
+}
 
 button:hover {
     background-color: #f6980c;
     box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
     transition: background-color 0.3s ease-in;    
-
 }
 
 footer {
     margin: 90px 20px 90px 20px;
     font-size: 16px;
     font-weight: 600;
-    
 }
 
 .footer__copyright {
@@ -203,13 +198,13 @@ footer {
 
 
 .about__sun-image {
-animation-name: rotate;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
-position: absolute;
-
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
 }
+
 @keyframes rotate {
    from { 
     transform: rotate(0deg);
@@ -220,5 +215,61 @@ position: absolute;
     
 }
 
+/*Mobile*/
+@media (max-width: 720px) {  
+    header {
+        padding: 10px;
+    }
+    .header__logo {
+        height: 20px;
+    } 
+    header a {
+        margin-right: 10px;
+    }
 
+    .about {
+      flex-direction: column-reverse;
+      padding: 50px 10px;
+    }
+    .about h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .about__image {
+        width: 280px;
+    }
+    .about__sun-image {
+        height: 75px;
+        width:75px ;
+    }
 
+    .form {
+        padding: 50px 10px;
+    }
+
+    .form h1 {
+        font-size: 36px; 
+    }
+
+    .footer__container {
+        flex-direction: column;
+    }
+  }
+
+/*Планшеты*/
+@media (max-width: 1024px) {    
+    .about {
+      padding: 115px 20px;
+    }
+    .about h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .about__image {
+        width: 280px;
+    }
+    .about__sun-image {
+        height: 75px;
+        width:75px ;
+    }
+  }
